@@ -1,9 +1,7 @@
+ ![Leaf Bot Banner](https://media1.tenor.com/m/2odBgL727ncAAAAd/green-aesthetic-anime-aesthetic.gif)
+---
+
 Leaf Bot V2 Documentation
-
-The Ultimate Customizable Bot for Roblox
-
-https://media1.tenor.com/m/2odBgL727ncAAAAd/green-aesthetic-anime-aesthetic.gif)
-
 
 ---
 
@@ -125,4 +123,5 @@ Discord: LeafCorp
 Footer:
 
 This documentation is continually updated with improvements, and I encourage you to check out the latest changes on my GitHub page. The bot is designed to be simple yet powerful, making your Roblox gaming experience even better.
+
 
