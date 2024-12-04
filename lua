@@ -10,7 +10,7 @@ local LeafBot = {
         SpamMessage = "Hello!",
         SpamRate = 1,
         SitEnabled = true,
-        DebugMode = true -- Enable debug mode for detailed logs
+        DebugMode = true, -- Enable debug mode for detailed logs
     },
     PlayerStatus = {},
     ActivePlayers = {},
@@ -67,9 +67,11 @@ end
 local function orbitCommand(player, target, speed, radius)
     debugLog("🍃 Executing orbit command for " .. player.Name .. " around " .. target.Name)
     local angle = math.random() * 360
-    local newPos = target.Position + Vector3.new(math.cos(angle) * radius, 0, math.sin(angle) * radius)
-    -- Orbiting logic (can be extended further)
-    player.HumanoidRootPart.CFrame = CFrame.new(newPos)
+    local newPos = target.Character.HumanoidRootPart.Position + Vector3.new(math.cos(angle) * radius, 0, math.sin(angle) * radius)
+    
+    -- Orbiting logic
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(newPos)
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(target.Character.HumanoidRootPart.Position)
 end
 
 -- Follow a player at a specified distance
@@ -154,30 +156,31 @@ game:GetService("RunService").Heartbeat:Connect(function()
     end
 end)
 
--- Command settings with sliders for speed and radius
-commandTab:CreateSlider("Orbit Speed", 1, 100, LeafBot.Config.OrbitSpeed, true, function(value)
-    LeafBot.Config.OrbitSpeed = value
+-- Command settings with inputs for speed, radius, and spam rate
+commandTab:CreateInput("Orbit Speed", "Enter the speed for orbiting", true, function(value)
+    LeafBot.Config.OrbitSpeed = tonumber(value)
 end)
 
-commandTab:CreateSlider("Orbit Radius", 1, 50, LeafBot.Config.OrbitRadius, true, function(value)
-    LeafBot.Config.OrbitRadius = value
+commandTab:CreateInput("Orbit Radius", "Enter the radius for orbiting", true, function(value)
+    LeafBot.Config.OrbitRadius = tonumber(value)
 end)
 
-commandTab:CreateSlider("Follow Distance", 1, 20, LeafBot.Config.FollowDistance, true, function(value)
-    LeafBot.Config.FollowDistance = value
+commandTab:CreateInput("Follow Distance", "Enter the follow distance", true, function(value)
+    LeafBot.Config.FollowDistance = tonumber(value)
 end)
 
-commandTab:CreateTextBox("Spam Message", LeafBot.Config.SpamMessage, true, function(value)
+commandTab:CreateInput("Spam Message", "Enter the message to spam", true, function(value)
     LeafBot.Config.SpamMessage = value
 end)
 
-commandTab:CreateSlider("Spam Rate", 0.1, 2, LeafBot.Config.SpamRate, true, function(value)
-    LeafBot.Config.SpamRate = value
+commandTab:CreateInput("Spam Rate", "Enter the rate at which to spam", true, function(value)
+    LeafBot.Config.SpamRate = tonumber(value)
 end)
 
 -- Display version and credits
 statusTab:CreateLabel("🍃 Version: " .. LeafBot.Version)
 informationTab:CreateLabel("🍃 Developed by LeafCorp, all rights reserved.")
+informationTab:CreateLabel("🍃 For help, join the Discord: leafcorp")
 
 -- Finalize script execution
 waitForGameToLoad() -- Ensure game is fully loaded before execution
