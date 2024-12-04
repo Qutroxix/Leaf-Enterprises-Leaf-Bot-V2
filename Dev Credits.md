@@ -1,10 +1,8 @@
-https://media1.tenor.com/m/2odBgL727ncAAAAd/green-aesthetic-anime-aesthetic.gif)
-
 Leaf Bot V2 Documentation
 
 The Ultimate Customizable Bot for Roblox
 
-
+https://media1.tenor.com/m/2odBgL727ncAAAAd/green-aesthetic-anime-aesthetic.gif)
 
 
 ---
