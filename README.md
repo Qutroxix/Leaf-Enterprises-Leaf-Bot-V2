@@ -29,5 +29,3 @@ If you'd like to contribute, feel free to fork the repository, submit issues, an
 ## Credits
 Developed by **Leaf**  
 Discord: `leafcorp`
-
-Special thanks to [GitHub User](#), [Contributor Name](#), and all the amazing open-source libraries that made this project possible! 
