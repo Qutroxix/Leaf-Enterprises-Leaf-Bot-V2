@@ -1,4 +1,4 @@
-https://c.tenor.com/gp-ubwQVltAAAAAC/tenor.gif
+https://media1.tenor.com/m/2odBgL727ncAAAAd/green-aesthetic-anime-aesthetic.gif
 # Leaf Enterprises - Leaf Bot V2
 
 ## Description
