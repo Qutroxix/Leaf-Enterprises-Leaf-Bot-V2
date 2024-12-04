@@ -1,5 +1,5 @@
-# Leaf Enterprises - Leaf Bot V2
 https://c.tenor.com/gp-ubwQVltAAAAAC/tenor.gif
+# Leaf Enterprises - Leaf Bot V2
 
 ## Description
 Leaf Bot V2 is an advanced, customizable bot framework built for Roblox. It provides a wide array of commands, safety checks, and smooth functionality for all users. It is designed with the best Lua practices and advanced error handling, ensuring stable operation without issues. Built with the goal of creating a seamless, user-friendly experience, Leaf Bot V2 is your go-to solution for automation in Roblox games.
