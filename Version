@@ -1,0 +1,5 @@
+local version = "V2"
+if version ~= "V2" then
+    warn("Incompatible version! Exiting...")
+    return
+end 
