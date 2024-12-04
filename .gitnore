@@ -1,0 +1,32 @@
+# Ignore the folder for user-specific settings and compiled data
+/.vscode/
+/.idea/
+/.DS_Store
+
+# Ignore compiled Lua files
+*.luac
+
+# Ignore logs or temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore local user data like saved configurations
+*.userdata
+*.save
+
+# Ignore Roblox-specific directories (e.g., for plugins or internal files)
+/rbxassetid/
+
+/Thumbs.db
+
+# Ignore any personal settings or configuration files that aren't useful for other contributors
+config.json
+config.xml
+*.user
+
+# Ignore node_modules and other irrelevant dependencies for projects using npm/yarn
+node_modules/
+
+# Ignore GitHub Actions workflows if used (not usually needed for most projects)
+.github/
